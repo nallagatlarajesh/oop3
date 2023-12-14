@@ -1,0 +1,19 @@
+class mother: #parent class
+    mother_name=''
+    def mom(self):
+        print(self.mother_name)
+class father:  #parent class
+    father_name=''
+    def dad(self):
+        print(self.father_name)
+class son(mother,father):   # child class  with 2 parent classes
+    son_name=''
+    def shownames(self):
+        print(self.son_name,"s/o Mr.& Mrs.",self.mother_name,'-',self.father_name)
+
+#object
+obj=son()
+obj.son_name="ram"
+obj.mother_name="rani"
+obj.father_name="raju"
+obj.shownames()
